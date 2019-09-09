@@ -13,4 +13,3 @@ RUN apt-get update \
     && rm -rf /tmp/* /var/tmp/* \
     && rm -rf /var/lib/apt/lists/* 
 WORKDIR /work
-CMD [ "sleep", "infinity" ]
