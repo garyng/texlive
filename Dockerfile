@@ -5,6 +5,7 @@ RUN apt-get update \
 		biber \
 		python3-pip \
 		inkscape \ 
+		default-jre \
     && pip3 install pygments \
 	&& apt-get clean \
   	&& apt-get autoclean -y \
