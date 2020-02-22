@@ -1,5 +1,6 @@
 FROM garyng/texlive-full
-
+# https://github.com/debuerreotype/debuerreotype/issues/10#issuecomment-439857431
+RUN for i in {1..8}; do mkdir -p "/usr/share/man/man$i"; done
 RUN apt-get update \
 	&& apt-get install -y \
 		biber \
