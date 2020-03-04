@@ -1,4 +1,4 @@
-FROM garyng/texlive-full
+FROM thomasweise/docker-texlive-full
 # https://stackoverflow.com/a/58503437/1023180
 RUN mkdir -p /usr/share/man/man1/
 RUN apt-get update \
