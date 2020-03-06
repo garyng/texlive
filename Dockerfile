@@ -7,7 +7,7 @@ ADD https://github.com/mrpiggi/svg/releases/download/v2.02d/svg_v2.02d.zip .
 RUN mkdir /svg \
 	&& unzip -d svg svg_v2.02d.zip
 
-FROM thomasweise/docker-texlive-full
+FROM garyng/texlive-full
 # https://stackoverflow.com/a/58503437/1023180
 RUN mkdir -p /usr/share/man/man1/
 RUN apt-get update \
